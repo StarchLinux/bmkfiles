@@ -77,4 +77,4 @@ maninstall:
 .endif
 
 # Explicitly list ${BEFOREMAN} to get it done even if ${MAN} is empty.
-all: ${BEFOREMAN} ${MAN} ${MANLINT}
+all: ${BEFOREMAN} ${MAN}
