@@ -9,7 +9,7 @@ FILES=	bsd.README bsd.dep.mk bsd.hdr.mk bsd.lib.mk bsd.man.mk bsd.nls.mk \
 NOOBJ=	noobj
 
 install:
-	${INSTALL} -dm 555 ${DESTDIR}/usr/share/mk
+	${INSTALL} -dm 755 ${DESTDIR}/usr/share/mk
 	${INSTALL} ${INSTALL_COPY} -o ${BINOWN} -g ${BINGRP} -m 444 ${FILES} \
 	    ${DESTDIR}/usr/share/mk
 
