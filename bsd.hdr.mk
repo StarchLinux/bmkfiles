@@ -1,4 +1,4 @@
-installhdr: ${HDR}
+hdrinstall: ${HDR}
 	${INSTALL} -Dm 444 ${HDR} ${DESTDIR}${HDRDIR}
 
-.PHONY: installhdr
+.PHONY: hdrinstall
