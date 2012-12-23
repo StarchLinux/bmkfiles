@@ -69,10 +69,10 @@ afterinstall:
 .if !target(realinstall)
 realinstall:
 .if defined(LKM)
-	${INSTALL} ${INSTALL_COPY} -o ${LKMOWN} -g ${LKMGRP} -m ${LKMMODE} \
+	${INSTALL} ${INSTALL_COPY} -m ${LKMMODE} \
 	    ${COMBINED} ${DESTDIR}${LKMDIR}/${LKM}.o
 .if exists(${.CURDIR}/${POSTINSTALL})
-	${INSTALL} ${INSTALL_COPY} -o ${LKMOWN} -g ${LKMGRP} -m 555 \
+	${INSTALL} ${INSTALL_COPY} -m 555 \
 	    ${.CURDIR}/${POSTINSTALL} ${DESTDIR}${LKMDIR}
 .endif
 .endif

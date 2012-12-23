@@ -30,8 +30,8 @@ nlsinstall:
 		dir=${DESTDIR}${NLSDIR}/$${NLSLANG}; \
 		echo ${INSTALL} -d $$dir; \
 		${INSTALL} -d $$dir; \
-		echo ${INSTALL} ${INSTALL_COPY} -o ${NLSOWN} -g ${NLSGRP} -m ${NLSMODE} $$msg $$dir/${NLSNAME}.cat; \
-		${INSTALL} ${INSTALL_COPY} -o ${NLSOWN} -g ${NLSGRP} -m ${NLSMODE} $$msg $$dir/${NLSNAME}.cat; \
+		echo ${INSTALL} ${INSTALL_COPY} -m ${NLSMODE} $$msg $$dir/${NLSNAME}.cat; \
+		${INSTALL} ${INSTALL_COPY} -m ${NLSMODE} $$msg $$dir/${NLSNAME}.cat; \
 	done
 .endif
 

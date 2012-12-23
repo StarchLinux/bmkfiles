@@ -54,7 +54,7 @@ _MAN_SUFFIXES=1 2 3 3p 4 5 6 7 8 9
 .  for sub in ${MANSUBDIR}
 _MAN_INST=${DESTDIR}${MANDIR}${page:E}${sub}${page:T}
 ${_MAN_INST}: ${page}
-	${INSTALL} ${INSTALL_COPY} -o ${MANOWN} -g ${MANGRP} -m ${MANMODE} \
+	${INSTALL} ${INSTALL_COPY} -m ${MANMODE} \
 		${.ALLSRC} ${.TARGET}
 
 maninstall: ${_MAN_INST}

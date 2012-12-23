@@ -124,7 +124,6 @@ afterinstall:
 realinstall:
 .if defined(PROG)
 	${INSTALL} ${INSTALL_COPY} -S ${INSTALL_STRIP} \
-	    -o ${BINOWN} -g ${BINGRP} \
 	    -m ${BINMODE} ${PROG} ${DESTDIR}${BINDIR}/${PROG}
 .endif
 .endif
