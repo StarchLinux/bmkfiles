@@ -84,17 +84,17 @@ SHAREGRP?=	bin
 SHAREOWN?=	root
 SHAREMODE?=	${NONBINMODE}
 
-MANDIR?=	/usr/share/man/man
+MANDIR?=	/doc/man/man
 MANGRP?=	bin
 MANOWN?=	root
 MANMODE?=	${NONBINMODE}
 
-LIBDIR?=	/usr/lib
+LIBDIR?=	/lib
 LIBGRP?=	${BINGRP}
 LIBOWN?=	${BINOWN}
 LIBMODE?=	${NONBINMODE}
 
-DOCDIR?=	/usr/share/doc
+DOCDIR?=	/doc
 DOCGRP?=	bin
 DOCOWN?=	root
 DOCMODE?=	${NONBINMODE}
